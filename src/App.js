@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {useRef, useEffect} from 'react'
+import Fluid from 'webgl-fluid'
+import Page from './components/Page'
 
-function App() {
+export default function App() {
+  const canvas = useRef(null)
+  useEffect(function () {
+    let c = canvas.current
+    Fluid(c)
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <canvas ref={canvas} style={{width: '100%', height: '100%'}}></canvas>
+      <div className='ontop'><Page/></div>
+      
     </div>
   );
 }
-
-export default App;
