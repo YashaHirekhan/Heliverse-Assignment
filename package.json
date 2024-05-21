@@ -12,7 +12,8 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "webgl-fluid": "^0.3.8",
-    "webgl-fluid-custom": "^0.1.1"
+    "webgl-fluid-custom": "^0.1.1",
+    "webgl-fluid-enhanced": "^0.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
