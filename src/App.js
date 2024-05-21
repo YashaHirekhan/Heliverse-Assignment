@@ -40,7 +40,10 @@ export default function App() {
         <div className='container'>
         <header className='header'>
           <img src={logo} alt="Logo" className='logo' />
-          <button className='purchase-button'>Purchase Now</button>
+          <a href="https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891" target="_blank" rel="noopener noreferrer" className="purchase-button">
+  Purchase Now
+</a>
+
         </header>
         <section className='sec1-div1'>
           <div className='sec1-col1'>
@@ -84,7 +87,11 @@ export default function App() {
           <div className='wrapper'>
             <h2 className='turn'>Turn Your Cursor Into A Colorful Magic Wand & Charm Your Visitors </h2>
             <p className='motionpara'>Motion Art for Elementor is a groundbreaking plugin that empowers you to effortlessly infuse your website with visually stunning motion art elements.</p>
-            <button className='purchase-from-envato'>Purchase From Envato</button>
+            <a href="https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891" target="_blank" rel="noopener noreferrer" className="purchase-from-envato">
+  Purchase From Envato
+  <span className="material-symbols-outlined">arrow_forward</span>
+</a>
+
           </div>
           <div className='wand-wrapper'>
             <img src={wand} alt='' className='wandimg'/>
@@ -161,10 +168,10 @@ export default function App() {
         </div>
       
         <footer className="footer">
-          <p>© 2023 Copywrite. All rights reserved by QodeMatrix</p>
+          <p className="copywrite">© 2023 Copywrite. All rights reserved by QodeMatrix</p>
           <div className="links">
-            <a href="/documentation" target="_blank" rel="noopener noreferrer">Documentation</a>
-            <a href="/support" target="_blank" rel="noopener noreferrer">Support</a>
+            <a href="https://qodematrix.com/docs/motion-art-for-elementor/" target="_blank" rel="noopener noreferrer">Documentation</a>
+            <a href="https://support.qodematrix.com/" target="_blank" rel="noopener noreferrer">Support</a>
           </div>
         </footer>
     
