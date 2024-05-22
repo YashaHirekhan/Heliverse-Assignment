@@ -89,34 +89,17 @@
     padding-bottom: 80px ;
   }
 
-  @media screen and (max-width: 768px) {
-    .sec1-div1 {
-      flex-direction: column;
-      align-items: center; 
-    }
-    
-    .sec1-col1, .sec1-col2, .sec1-col3 {
-      width: 100%; 
-      text-align: center; 
-    }
 
-    .unleash {
-      font-size: calc(2vw + 14px); 
-      max-width: 90%; 
-      margin: 25px;
-    }
-    .sec1-col3{
-      display: none;
-    }
-  }
 
 
 .sec1-col1{
+  display: flex;
+  flex-direction: column;
   text-align: start;
   padding: 10px;
   width: 300px;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 }
 
 .transform{
@@ -195,6 +178,31 @@
 .sec1-col3{
   max-width: 256px;
   flex-grow:1 ;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sec1-div1 {
+    flex-direction: column;
+    align-items: center; 
+    
+  }
+  
+  .sec1-col1, .sec1-col2, .sec1-col3 {
+    width: 100%; 
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .unleash {
+    font-size: calc(2vw + 14px); 
+    max-width: 90%; 
+    margin: 25px;
+  }
+  .sec1-col3{
+    display: none;
+  }
 }
 
 .sec2{
@@ -299,9 +307,13 @@
 
 .wrapper{
   display: flex;
+  text-align: start;
   flex-direction: column;
   max-width: 748px;
+  padding: 10px;
+  justify-content: start;
 }
+
 
 
 .wand-wrapper{
@@ -335,9 +347,9 @@
 }
 
 .purchase-from-envato {
-  display: flex; /* Use flexbox */
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Align items horizontally */
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
   background: linear-gradient(90deg, #2b08dd 30%, #ff5703);
   border-radius: 20px;
   color: white;
@@ -350,92 +362,113 @@
   max-width: 331px;
   border: none;
   text-decoration: none;
-  pointer-events: all; /* Remove underline from link */
+  pointer-events: all;
 }
 
 .material-symbols-outlined {
-  margin-left: 5px; /* Adjust margin as needed */
+  margin-left: 5px; 
 }
 
 
 .material-symbols-outlined {
-  margin-left: 5px; /* Adjust margin as needed */
+  margin-left: 5px; 
 }
+
+
+
 
 @media screen and (max-width: 1200px) {
-  .turn {
-    font-size: 38px; 
-    margin: 25px;
+  .sec3{
+    flex-direction: column;
+    align-items: center; 
   }
+
+  .turn {
+    font-size: calc(4vw + 20px);  
+  }
+
   .wandimg {
     width: 260;
     height:auto;
-    margin-left: 20px;
+    margin: 40px;
   }
   .wand-wrapper{
     justify-content: center;
-    margin-left: 20px;
   }
 
-  .purchase-from-envato{
-    margin: 25px;
-  }
+
 }
 
 @media screen and (max-width: 992px) {
+  
+  .sec3{
+    flex-direction: column;
+    align-items: center; 
+  }
   .turn {
-    font-size: 36px; 
+    font-size: calc(3vw + 20px);
     max-width: 100%;
     margin-left: 25px;
   }
   .motionpara{
-    font-size: 28px;
+    font-size: calc(1vw + 14px); 
     max-width: 100%;
-    margin-left: 20px;
+    margin-left: 25px;
   }
   .wandimg {
     width: 240;
     height:auto;
-    margin-left: 20px;
+    margin-left: 25px;
   }
   .wand-wrapper{
     justify-content: center;
     margin-left: 20px;
   }
 
-  .purchase-from-envato{
-    margin: 25px;
-  }
+
 }
 
 @media screen and (max-width: 768px) {
   .sec3{
     flex-direction: column;
+    align-items: center; 
   }
   
   .turn {
-    font-size: 30px; 
+    font-size: calc(2vw + 20px);
     max-width: 100%;
-    margin-left: 25px;
+    margin-left: 15px;
   }
   .motionpara{
-    font-size: 26px;
-    max-width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size: calc(0.5vw + 14px); 
+    max-width: 100%; 
+    margin: 15px;
   }
   .wandimg {
     width: 220;
     height:auto;
-    margin-left: 20px;
+    margin: 30px;
   }
   .wand-wrapper{
     justify-content: center;
     margin-left: 20px;
   }
+  .wrapper{
+    justify-content: center;
+    width: calc(70vw + 14px);
+    text-align: center;
+ 
+  }
+  
 
   .purchase-from-envato{
-    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(0.5vw + 14px); 
+    max-width: calc(50vw + 14px);
+    max-height: calc(0.1vw + 14px);
+    margin: 0 auto;
   }
 }
 
@@ -443,18 +476,19 @@
   
   .sec3{
     flex-direction: column;
+    align-items: center; 
+    width: 90%;
   }
   
   .turn {
-    font-size: 28px; 
+    font-size: calc(1vw + 20px);
     max-width: 100%;
-    margin-left: 45px;
+    margin-left: 25px;
   }
   .motionpara{
-    font-size: 18px;
-    max-width: 100%;
-    margin-left: 45px;
-    margin-right: 45px;
+    font-size: calc(0.1vw + 14px); 
+    max-width: 90%; 
+    margin: 25px;
   }
   .wandimg {
     width: 200;
@@ -464,9 +498,16 @@
   .wand-wrapper{
     justify-content: center;
   }
-
+  .wrapper{
+    justify-content: center;
+    width: calc(80vw + 14px);
+    text-align: center;
+ 
+  }
   .purchase-from-envato{
-    margin: 45px;
+    font-size: calc(0.05vw + 14px); 
+    max-width: calc(50vw + 14px);
+    max-height: calc(0.1vw + 14px);
   }
 }
  
@@ -564,7 +605,7 @@
 
 @media screen and (max-width: 1200px) {
   .apply {
-    font-size: 38px; 
+    font-size: calc(4vw + 20px);
     width: 80vw; 
   }
   .apply-on{
@@ -589,47 +630,47 @@
 
 @media screen and (max-width: 992px) {
   .apply {
-    font-size: 36px; /* Adjust as needed */
-    width: 85vw; /* Adjust as needed */
+    font-size: calc(3vw + 20px); 
+    width: 85vw; 
   }
   .apply-on{
     display: flex;
     flex-direction: column;
   }
   .outer-div1, .outer-div2 {
-    max-width: 85vw+14px; /* Adjust as needed */
-    padding: 20px; /* Adjust as needed */
+    max-width: 85vw+14px; 
+    padding: 20px; 
   }
 
   .outer-div1 h2, .outer-div2 h2 {
-    font-size: 3.5vw; /* Adjust as needed */
+    font-size: 3.5vw; 
   }
 
   .outer-div1 p, .outer-div2 p {
-    font-size: 2.5vw; /* Adjust as needed */
+    font-size: 2.5vw; 
   }
 }
 
 @media screen and (max-width: 768px) {
   .apply {
-    font-size: 30px; /* Adjust as needed */
-    width: 90vw; /* Adjust as needed */
+    font-size: calc(2vw + 20px);
+    width: 90vw; 
   }
   .apply-on{
     display: flex;
     flex-direction: column;
   }
   .outer-div1, .outer-div2 {
-    max-width: 80vw+14px; /* Adjust as needed */
-    padding: 15px; /* Adjust as needed */
+    max-width: 80vw+14px; 
+    padding: 15px; 
   }
 
   .outer-div1 h2, .outer-div2 h2 {
-    font-size: 4vw; /* Adjust as needed */
+    font-size: 4vw; 
   }
 
   .outer-div1 p, .outer-div2 p {
-    font-size: 3vw; /* Adjust as needed */
+    font-size: 3vw; 
   }
 
   .sectionImg{
@@ -656,11 +697,11 @@
   }
 
   .outer-div1 h2, .outer-div2 h2 {
-    font-size: 4.5vw; /* Adjust as needed */
+    font-size: 4.5vw; 
   }
 
   .outer-div1 p, .outer-div2 p {
-    font-size: 3.5vw; /* Adjust as needed */
+    font-size: 3.5vw; 
   }
 
   .sectionImg{
@@ -704,7 +745,7 @@
 }
 @media screen and (max-width: 1200px)  {
   .sec5-div1{
-    max-width: calc(87vw + 14px);
+    width: calc(87vw + 14px);
   }
 
   .sec5-div1 h2 {
@@ -712,7 +753,7 @@
   }
 
   .sec5-div2 img {
-    max-width: 380px;
+    max-width: calc(87vw + 14px);
   }
 }
 @media screen and (max-width: 992px)  {
@@ -727,13 +768,12 @@
     font-size: 18px;
    }
   .sec5-div2 img {
-    max-width: 360px;
+    max-width: calc(85vw + 14px);
   }
 }
 @media screen and (max-width: 768px)  {
   .sec5-div1{
     max-width: calc(80vw + 14px);
-    
   }
 
   .sec5-div1 h2 {
@@ -743,12 +783,12 @@
     font-size: 16px;
    }
   .sec5-div2 img {
-    max-width: 360px;
+    max-width: calc(80vw + 14px);
   }
 }
 @media screen and (max-width: 576px)  {
   .sec5-div1{
-    max-width: calc(70vw + 14px);
+    max-width: calc(57vw + 14px);
     
   }
 
@@ -761,7 +801,7 @@
    }
 
   .sec5-div2 img {
-    max-width: 340px;
+    max-width: calc(55vw + 14px);
   }
 }
 
@@ -857,6 +897,10 @@
     flex-direction: wrap;
     flex-wrap: wrap;
   }
+  .feature-card{
+    max-width: 330px;
+    max-height: 330px;
+  }
 
 }
 @media screen and (max-width: 992px){
@@ -878,7 +922,18 @@
   }
   .feature-card{
     max-width: 330px;
+    max-height: 314px;
   }
+
+  .feature-card h2 {
+    font-size: calc(0.5vw + 14px); 
+  }
+
+  .feature-card p{
+    font-size: calc(0.1vw + 14px); 
+    line-height: 26px;
+  }
+
 }
 @media screen and (max-width: 768px){
   .sec6 h1 {
@@ -896,8 +951,10 @@
     flex-direction: column;
   }
   .feature-card{
-    max-width: 330px;
+    width: 330px;
   }
+
+
 }
 @media screen and (max-width: 576px){
   .sec6 h1 {
@@ -916,8 +973,9 @@
     flex-direction: column;
   }
   .feature-card{
-    max-width: 330px;
+    width: calc(57vw + 14px);
   }
+
 }
 
 .footer {
