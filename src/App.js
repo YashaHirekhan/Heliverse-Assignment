@@ -28,8 +28,9 @@ export default function App() {
       DENSITY_DISSIPATION: 0.8,
       PRESSURE_ITERATIONS: 10,
       BACK_COLOR: '#0A0419',
-      COLOR_PALETTE: ['#61dafb', '#a8dadc', '#457b9d', '#1d3557', '#f1faee'],
+      COLOR_PALETTE: ['#61dafb', '#a8dadc', '#457b9d', '#1d3557', '#f1faee','#abb8c3','ffffff','#f78da7','#cf2e2e','#ff6900','#fcb900','#7bdcb5','#00d08','#8ed1fc','#0693e3','#9b51e0'],
     });
+    
   }, []);
 
   return (
